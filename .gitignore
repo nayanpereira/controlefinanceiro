@@ -1,0 +1,22 @@
+# 1. Arquivos de Dados 
+# Não suba arquivos de dados, especialmente se forem grandes ou privados.
+*.json
+*.sqlite
+*.log
+*.sqlite3
+
+# 2. Arquivos de Ambiente Virtual
+# Nunca suba seu ambiente virtual
+.venv/
+venv/
+env/
+*.env
+
+# 3. Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 4. Cache do Jupyter e VS Code
+.ipynb_checkpoints/
+.vscode/
