@@ -34,7 +34,7 @@ def menu():
                     print(f"Estoque atualizado: {produto.estoque}")
                     break
             else:
-                print("Produto não encontrado.")
+                print("Produto não encontrado, escreva o nome conforme o produto em estoque, com a primeira letra maiúscula .")
         elif escolha == "3":
             nome = input("Nome do produto: ")
             quantidade = int(input("Quantidade a remover: "))
@@ -44,10 +44,10 @@ def menu():
                     print(f"Estoque atualizado: {produto.estoque}")
                     break
             else:
-                print("Produto não encontrado.")
+                print("Produto não encontrado, escreva o nome conforme o produto em estoque, com a primeira letra maiúscula.")
         elif escolha == "4":
             nome = input("Nome do produto: ")
-            data_atual = input("Data atual (YYYY-MM-DD): ")
+            data_atual = input("Escreva data atual apenas com números sem espaço (YYYYMMDD): ")
             for produto in lista_produtos:
                 if produto.nome == nome:
                     if produto.verificar_validade(data_atual):
@@ -56,7 +56,7 @@ def menu():
                         print(f"O produto {produto.nome} está dentro da validade.")
                     break
             else:
-                print("Produto não encontrado.")
+                print("Produto não encontrado, escreva o nome conforme o produto em estoque, com a primeira letra maiúscula..")
         elif escolha == "5":
             break
         else:
