@@ -40,7 +40,7 @@ def menu():
             quantidade = int(input("Quantidade a remover: "))
             for produto in lista_produtos:
                 if produto.nome == nome:
-                    produto.remover_estoque(quantidade)
+                    produto.remov   er_estoque(quantidade)
                     print(f"Estoque atualizado: {produto.estoque}")
                     break
             else:
